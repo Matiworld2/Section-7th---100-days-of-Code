@@ -80,6 +80,11 @@ main span{
     font-weight: bold;
 }
 
+#highlite{
+    padding: 24px;
+    background: linear-gradient(45deg, rgb(226,255,253), rgb(202,243,240));
+}
+
 
 main p{
  color: rgb(123,123,123);
