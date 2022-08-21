@@ -8,13 +8,16 @@ header{
 
 main ul{
     list-style: None;
-    width: 800px;
-    margin:0 auto;
+    width: 1200px;
+    margin:0 auto 48px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
 }
 
 main li{
     display: flex;
-    background-color: whitesmoke;
+    background-color: white;
     box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
     border-radius: 5px;
     overflow: hidden;
@@ -22,10 +25,65 @@ main li{
 
 .item-content{
     padding: 24px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.item-content h2{
+    margin: 0;
+}
+
+#logo a{
+    color:rgb(183,230,235)
 }
 
 main li img{
     width: 300px;
     height: 280px;
     object-fit: cover;
+}
+
+header nav a:hover{
+    background-color: rgb(183,230,235);
+    color: rgb(59,59,59);
+}
+
+nav a{
+    color:rgb(183,230,235)
+}
+
+main ul a{
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: None;
+    color: rgb(60, 60, 60);
+    font-weight: bold;
+    margin: 50px, 0, 0, 0;
+    border-radius: 4px;
+}
+
+main ul a:hover{
+    padding: 2px;
+}
+
+main ul a{
+    margin-right: 0;
+}
+
+.actions{
+    text-align: right;
+}
+
+.actions a:hover{
+    background-color: rgb(115, 195, 239) ;
+}
+
+li:nth-last-of-type(8){
+    grid-column: 1/ span 2;
+}
+
+li:nth-last-of-type(1){
+    grid-column: 1/ span 2;
 }
